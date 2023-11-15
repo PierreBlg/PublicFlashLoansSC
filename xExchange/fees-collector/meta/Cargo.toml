@@ -1,0 +1,13 @@
+[package]
+name = "fees-collector-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+authors = ["MultiversX <contact@multiversx.com>"]
+
+[dev-dependencies]
+[dependencies.fees-collector]
+path = ".."
+
+[dependencies.multiversx-sc-meta]
+version = "0.43.2"

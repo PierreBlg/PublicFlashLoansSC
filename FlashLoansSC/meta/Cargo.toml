@@ -1,0 +1,11 @@
+[package]
+name = "fastloan-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.fastloan]
+path = ".."
+
+[dependencies.multiversx-sc-meta]
+version = "0.43.3"

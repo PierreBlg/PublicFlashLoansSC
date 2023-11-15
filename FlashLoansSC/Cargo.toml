@@ -1,0 +1,36 @@
+[package]
+name = "fastloan"
+version = "0.0.0"
+authors = ["Pierre Bellegueule"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.multiversx-sc]
+version = "0.43.3"
+
+[dev-dependencies.multiversx-sc-scenario]
+version = "0.43.3"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+
+[dependencies.common_structs]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.pair]
+path="../xExchange/pair"
+
+[dev-dependencies.simple-lock]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dev-dependencies.fees-collector]
+path="../xExchange/fees-collector"
+
+[dev-dependencies.pausable]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"

@@ -1,0 +1,65 @@
+[package]
+name = "fees-collector"
+version = "0.0.0"
+authors = ["MultiversX <contact@multiversx.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+[dependencies.multiversx-sc]
+version = "=0.43.3"
+features = ["esdt-token-payment-legacy-decode"]
+
+[dependencies.multiversx-sc-modules]
+version = "=0.43.3"
+
+[dependencies.energy-query]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.week-timekeeping]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.weekly-rewards-splitting]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.energy-factory]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.simple-lock]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.locking_module]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.utils]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.sc_whitelist_module]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.common-types]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dependencies.common_errors]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+
+[dev-dependencies.multiversx-sc-scenario]
+version = "=0.43.3"
+
+[dev-dependencies.sc_whitelist_module]
+git = "https://github.com/multiversx/mx-exchange-sc"
+rev = "2fd2e4c"
